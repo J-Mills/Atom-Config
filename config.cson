@@ -1,0 +1,23 @@
+"*":
+  core:
+    disabledPackages: [
+      "activate-power-mode"
+    ]
+    themes: [
+      "seti-ui"
+      "atom-monokai"
+    ]
+  editor:
+    invisibles: {}
+    tabLength: 6
+  "exception-reporting":
+    userId: "541fc90b-7bde-24b3-d8fe-bb3c177aa5ef"
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+  "one-dark-ui": {}
+  welcome:
+    showOnStartup: false

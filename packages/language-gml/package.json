@@ -1,0 +1,43 @@
+{
+  "name": "language-gml",
+  "main": "./lib/language-gml",
+  "version": "0.3.0",
+  "description": "GML syntax highlighting",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "language-gml:toggle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coppolaemilio/language-gml.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {},
+  "readme": "# GML for Atom\n\nEnable GML syntax highlighting to your .gml files to use Atom as an external editor.\n\nThis is my first package and it is based on another so you might find some inconsistencies. Any recommendation is welcome.\n\n![GML example](http://i.imgur.com/WIFVyAr.png)\n\nI hope this package can help many other devs like me that want to take advantage of a serious code editor instead of the one included with GM:S.\n\nIf you want to enable GML autocomplete you can use this package by [ThomasHickman](https://github.com/ThomasHickman) https://atom.io/packages/autocomplete-gml\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/coppolaemilio/language-gml/issues"
+  },
+  "homepage": "https://github.com/coppolaemilio/language-gml#readme",
+  "_id": "language-gml@0.3.0",
+  "_shasum": "56855f056390ab6a70c130b9063b3d582fa83072",
+  "_resolved": "file:../d-116529-68760-1dgjz8f/package.tgz",
+  "_from": "../d-116529-68760-1dgjz8f/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/language-gml-view.coffee",
+        "lib/language-gml.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}
