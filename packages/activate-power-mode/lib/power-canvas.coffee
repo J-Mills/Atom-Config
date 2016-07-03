@@ -33,8 +33,7 @@ module.exports =
 
     @init()
 
-  spawnParticles: (range) ->
-    screenPosition = @editor.screenPositionForBufferPosition range
+  spawnParticles: (screenPosition) ->
     cursorOffset = @calculateCursorOffset()
 
     {left, top} = @editorElement.pixelPositionForScreenPosition screenPosition
@@ -49,8 +48,8 @@ module.exports =
 
   getColorAtPosition: (left, top) ->
     offset = @editorElement.getBoundingClientRect()
-    el = atom.views.getView(@editor).shadowRoot.elementFromPoint(
-      left + offset.left
+    el = (@editorElement.shadowRoot ? document).elementFromPoint(
+      left + offset.left - 3
       top + offset.top
     )
 
@@ -61,7 +60,7 @@ module.exports =
 
   calculateCursorOffset: ->
     editorRect = @editorElement.getBoundingClientRect()
-    scrollViewRect = @editorElement.shadowRoot.querySelector(".scroll-view").getBoundingClientRect()
+    scrollViewRect = (@editorElement.shadowRoot ? @editorElement).querySelector(".scroll-view").getBoundingClientRect()
 
     top: scrollViewRect.top - editorRect.top + @editor.getLineHeightInPixels() / 2
     left: scrollViewRect.left - editorRect.left
